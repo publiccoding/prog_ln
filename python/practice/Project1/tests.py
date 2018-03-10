@@ -21,8 +21,21 @@
 
 import sys
 
-t='thimma'
+t='thimma'.capitalize
+
 print(sys.platform)
 print(2**200)
 print('Spam!'*8)
-input()
+#input()
+
+val = ['thimma','rayan','krishnappa','varaganappalli']
+
+def capital(x):
+    for v in x:
+        return v.capitalize()
+def upper_(x):
+    for v in x:
+        return v.upper()
+
+print([ x.capitalize() for l in val if len(val) >2 for x in l.upper() if len(l) > 5 ])
+

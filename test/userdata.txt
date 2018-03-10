@@ -1,0 +1,4 @@
+ thimma = lakshmi 
+ kumar = password 
+ lakshmi = thimma@1 
+ krishnappa = varaganappalli 
