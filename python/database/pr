@@ -1,0 +1,183 @@
+
+SQL*Plus: Release 11.2.0.1.0 Production on Sat Apr 28 18:39:22 2018
+
+Copyright (c) 1982, 2010, Oracle.  All rights reserved.
+
+Enter user-name: sys as sysdba
+Enter password:
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> start testdb;
+SP2-0310: unable to open file "testdb.sql"
+SQL> startup
+ORA-01081: cannot start already-running ORACLE - shut it down first
+SQL> select * from hr.employees;
+select * from hr.employees
+                 *
+ERROR at line 1:
+ORA-00942: table or view does not exist
+
+
+SQL> shutdown immediate
+Database closed.
+Database dismounted.
+ORACLE instance shut down.
+SQL> startup
+ORACLE instance started.
+
+Total System Global Area 3173429248 bytes
+Fixed Size                  2179936 bytes
+Variable Size            1728056480 bytes
+Database Buffers         1426063360 bytes
+Redo Buffers               17129472 bytes
+Database mounted.
+Database opened.
+SQL> conn testdb;
+Enter password:
+ERROR:
+ORA-01017: invalid username/password; logon denied
+
+
+Warning: You are no longer connected to ORACLE.
+SQL> conn sys as sysdba
+Enter password:
+Connected.
+SQL> use testdb;
+SP2-0042: unknown command "use testdb" - rest of line ignored.
+SQL> use testdb
+SP2-0042: unknown command "use testdb" - rest of line ignored.
+SQL> select * from dual;
+
+D
+-
+X
+
+SQL> create table emp(id int,name varchar2(20);
+create table emp(id int,name varchar2(20)
+                                        *
+ERROR at line 1:
+ORA-00907: missing right parenthesis
+
+
+SQL> create table emp(id int,name varchar2(20));
+
+Table created.
+
+SQL> select name from v$database;
+
+NAME
+---------
+TESTDB
+
+SQL> select instance from v$thread;
+
+INSTANCE
+--------------------------------------------------------------------------------
+
+testdb
+
+SQL> select ('userenv','instance_name') from dual;
+select ('userenv','instance_name') from dual
+                 *
+ERROR at line 1:
+ORA-00907: missing right parenthesis
+
+
+SQL> select sys_context('userenv','instance_name') from dual;
+
+SYS_CONTEXT('USERENV','INSTANCE_NAME')
+--------------------------------------------------------------------------------
+
+testdb
+
+SQL> select db_name();
+select db_name()
+               *
+ERROR at line 1:
+ORA-00923: FROM keyword not found where expected
+
+
+SQL> show tables;
+SP2-0158: unknown SHOW option "tables"
+SQL> select  * from table_name_here;
+select  * from table_name_here
+               *
+ERROR at line 1:
+ORA-00942: table or view does not exist
+
+
+SQL> select ora_database_name from dual;
+
+ORA_DATABASE_NAME
+--------------------------------------------------------------------------------
+
+TESTDB
+
+SQL> select * from global_name;
+
+GLOBAL_NAME
+--------------------------------------------------------------------------------
+
+TESTDB
+
+SQL> describe v$database;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+
+ DBID                                               NUMBER
+ NAME                                               VARCHAR2(9)
+ CREATED                                            DATE
+ RESETLOGS_CHANGE#                                  NUMBER
+ RESETLOGS_TIME                                     DATE
+ PRIOR_RESETLOGS_CHANGE#                            NUMBER
+ PRIOR_RESETLOGS_TIME                               DATE
+ LOG_MODE                                           VARCHAR2(12)
+ CHECKPOINT_CHANGE#                                 NUMBER
+ ARCHIVE_CHANGE#                                    NUMBER
+ CONTROLFILE_TYPE                                   VARCHAR2(7)
+ CONTROLFILE_CREATED                                DATE
+ CONTROLFILE_SEQUENCE#                              NUMBER
+ CONTROLFILE_CHANGE#                                NUMBER
+ CONTROLFILE_TIME                                   DATE
+ OPEN_RESETLOGS                                     VARCHAR2(11)
+ VERSION_TIME                                       DATE
+ OPEN_MODE                                          VARCHAR2(20)
+ PROTECTION_MODE                                    VARCHAR2(20)
+ PROTECTION_LEVEL                                   VARCHAR2(20)
+ REMOTE_ARCHIVE                                     VARCHAR2(8)
+ ACTIVATION#                                        NUMBER
+ SWITCHOVER#                                        NUMBER
+ DATABASE_ROLE                                      VARCHAR2(16)
+ ARCHIVELOG_CHANGE#                                 NUMBER
+ ARCHIVELOG_COMPRESSION                             VARCHAR2(8)
+ SWITCHOVER_STATUS                                  VARCHAR2(20)
+ DATAGUARD_BROKER                                   VARCHAR2(8)
+ GUARD_STATUS                                       VARCHAR2(7)
+ SUPPLEMENTAL_LOG_DATA_MIN                          VARCHAR2(8)
+ SUPPLEMENTAL_LOG_DATA_PK                           VARCHAR2(3)
+ SUPPLEMENTAL_LOG_DATA_UI                           VARCHAR2(3)
+ FORCE_LOGGING                                      VARCHAR2(3)
+ PLATFORM_ID                                        NUMBER
+ PLATFORM_NAME                                      VARCHAR2(101)
+ RECOVERY_TARGET_INCARNATION#                       NUMBER
+ LAST_OPEN_INCARNATION#                             NUMBER
+ CURRENT_SCN                                        NUMBER
+ FLASHBACK_ON                                       VARCHAR2(18)
+ SUPPLEMENTAL_LOG_DATA_FK                           VARCHAR2(3)
+ SUPPLEMENTAL_LOG_DATA_ALL                          VARCHAR2(3)
+ DB_UNIQUE_NAME                                     VARCHAR2(30)
+ STANDBY_BECAME_PRIMARY_SCN                         NUMBER
+ FS_FAILOVER_STATUS                                 VARCHAR2(22)
+ FS_FAILOVER_CURRENT_TARGET                         VARCHAR2(30)
+ FS_FAILOVER_THRESHOLD                              NUMBER
+ FS_FAILOVER_OBSERVER_PRESENT                       VARCHAR2(7)
+ FS_FAILOVER_OBSERVER_HOST                          VARCHAR2(512)
+ CONTROLFILE_CONVERTED                              VARCHAR2(3)
+ PRIMARY_DB_UNIQUE_NAME                             VARCHAR2(30)
+ SUPPLEMENTAL_LOG_DATA_PL                           VARCHAR2(3)
+ MIN_REQUIRED_CAPTURE_CHANGE#                       NUMBER
+
+SQL>

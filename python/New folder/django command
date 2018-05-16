@@ -1,0 +1,150 @@
+http://127.0.0.1:8000
+C:\Users\kristhim\GitRepo\prog_ln\python\django_tut\mysite>conda create --name mysite python=3.6
+
+CondaValueError: prefix already exists: C:\ProgramData\Anaconda3\envs\mysite
+
+
+C:\Users\kristhim\GitRepo\prog_ln\python\django_tut\mysite>cd ..
+
+C:\Users\kristhim\GitRepo\prog_ln\python\django_tut>dir
+ Volume in drive C is PC COE
+ Volume Serial Number is 56F5-4CB0
+
+ Directory of C:\Users\kristhim\GitRepo\prog_ln\python\django_tut
+
+05/16/2018  07:31 PM    <DIR>          .
+05/16/2018  07:31 PM    <DIR>          ..
+05/16/2018  07:35 PM    <DIR>          mysite
+               0 File(s)              0 bytes
+               3 Dir(s)  86,636,838,912 bytes free
+
+C:\Users\kristhim\GitRepo\prog_ln\python\django_tut>cd mysite
+
+C:\Users\kristhim\GitRepo\prog_ln\python\django_tut\mysite>dir
+ Volume in drive C is PC COE
+ Volume Serial Number is 56F5-4CB0
+
+ Directory of C:\Users\kristhim\GitRepo\prog_ln\python\django_tut\mysite
+
+05/16/2018  07:35 PM    <DIR>          .
+05/16/2018  07:35 PM    <DIR>          ..
+05/16/2018  07:32 PM               826 manage.py
+               1 File(s)            826 bytes
+               2 Dir(s)  86,636,642,304 bytes free
+
+C:\Users\kristhim\GitRepo\prog_ln\python\django_tut\mysite>cd ..
+
+C:\Users\kristhim\GitRepo\prog_ln\python\django_tut>dir
+ Volume in drive C is PC COE
+ Volume Serial Number is 56F5-4CB0
+
+ Directory of C:\Users\kristhim\GitRepo\prog_ln\python\django_tut
+
+05/16/2018  07:31 PM    <DIR>          .
+05/16/2018  07:31 PM    <DIR>          ..
+05/16/2018  07:35 PM    <DIR>          mysite
+               0 File(s)              0 bytes
+               3 Dir(s)  86,636,642,304 bytes free
+
+C:\Users\kristhim\GitRepo\prog_ln\python\django_tut>rmdir mysite /s
+mysite, Are you sure (Y/N)? y
+
+C:\Users\kristhim\GitRepo\prog_ln\python\django_tut>django-admin startproject mysite
+
+C:\Users\kristhim\GitRepo\prog_ln\python\django_tut>cd mysite
+
+C:\Users\kristhim\GitRepo\prog_ln\python\django_tut\mysite>dir
+ Volume in drive C is PC COE
+ Volume Serial Number is 56F5-4CB0
+
+ Directory of C:\Users\kristhim\GitRepo\prog_ln\python\django_tut\mysite
+
+05/16/2018  07:40 PM    <DIR>          .
+05/16/2018  07:40 PM    <DIR>          ..
+05/16/2018  07:40 PM               826 manage.py
+05/16/2018  07:40 PM    <DIR>          mysite
+               1 File(s)            826 bytes
+               3 Dir(s)  86,636,498,944 bytes free
+
+C:\Users\kristhim\GitRepo\prog_ln\python\django_tut\mysite>cd mysite
+
+C:\Users\kristhim\GitRepo\prog_ln\python\django_tut\mysite\mysite>dir
+ Volume in drive C is PC COE
+ Volume Serial Number is 56F5-4CB0
+
+ Directory of C:\Users\kristhim\GitRepo\prog_ln\python\django_tut\mysite\mysite
+
+05/16/2018  07:40 PM    <DIR>          .
+05/16/2018  07:40 PM    <DIR>          ..
+05/16/2018  07:40 PM             3,216 settings.py
+05/16/2018  07:40 PM               784 urls.py
+05/16/2018  07:40 PM               406 wsgi.py
+05/16/2018  07:40 PM                 0 __init__.py
+               4 File(s)          4,406 bytes
+               2 Dir(s)  86,636,433,408 bytes free
+
+C:\Users\kristhim\GitRepo\prog_ln\python\django_tut\mysite\mysite>cd ..
+
+C:\Users\kristhim\GitRepo\prog_ln\python\django_tut\mysite>conda create --name mysite python=3.6
+
+CondaValueError: prefix already exists: C:\ProgramData\Anaconda3\envs\mysite
+
+
+C:\Users\kristhim\GitRepo\prog_ln\python\django_tut\mysite>source activate mysite
+'source' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kristhim\GitRepo\prog_ln\python\django_tut\mysite>source activate mysite
+'source' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kristhim\GitRepo\prog_ln\python\django_tut\mysite>activate mysite
+
+(mysite) C:\Users\kristhim\GitRepo\prog_ln\python\django_tut\mysite>pip install django
+Collecting django
+  Downloading https://files.pythonhosted.org/packages/23/91/2245462e57798e9251de87c88b2b8f996d10ddcb68206a8a020561ef7bd3/Django-2.0.5-py3-none-any.whl
+ (7.1MB)
+    100% |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 7.1MB 351kB/s
+Collecting pytz (from django)
+  Downloading https://files.pythonhosted.org/packages/dc/83/15f7833b70d3e067ca91467ca245bae0f6fe56ddc7451aa0dc5606b120f2/pytz-2018.4-py2.py3-none-any.
+whl (510kB)
+    100% |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 512kB 2.0MB/s
+Installing collected packages: pytz, django
+Successfully installed django-2.0.5 pytz-2018.4
+
+(mysite) C:\Users\kristhim\GitRepo\prog_ln\python\django_tut\mysite>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+(mysite) C:\Users\kristhim\GitRepo\prog_ln\python\django_tut\mysite>dir
+ Volume in drive C is PC COE
+ Volume Serial Number is 56F5-4CB0
+
+ Directory of C:\Users\kristhim\GitRepo\prog_ln\python\django_tut\mysite
+
+05/16/2018  07:40 PM    <DIR>          .
+05/16/2018  07:40 PM    <DIR>          ..
+05/16/2018  07:40 PM               826 manage.py
+05/16/2018  07:40 PM    <DIR>          mysite
+               1 File(s)            826 bytes
+               3 Dir(s)  86,598,434,816 bytes free
+
+(mysite) C:\Users\kristhim\GitRepo\prog_ln\python\django_tut\mysite>python manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 14 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+
+Run 'python manage.py migrate' to apply them.
+May 16, 2018 - 19:47:07
+Django version 2.0.5, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[16/May/2018 19:47:20] "GET / HTTP/1.1" 200 16348
+[16/May/2018 19:47:21] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[16/May/2018 19:47:24] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[16/May/2018 19:47:24] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+[16/May/2018 19:47:24] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+Not Found: /favicon.ico
+[16/May/2018 19:47:24] "GET /favicon.ico HTTP/1.1" 404 1973
