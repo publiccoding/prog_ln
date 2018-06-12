@@ -34,14 +34,10 @@ with open('apache_clf.txt','r') as file:
     match = pattern.findall(data)
     #print(match)
     for mat in match:
-        print(mat[2])
-        # for i in range(0,len(mat),2):
-        #     print(mat[i])
+        for i in range(0,len(mat)):
+            print(mat[i],end='',sep=' ')
+            
 
-
-
-
-    
 
 
 

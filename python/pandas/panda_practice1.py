@@ -14,35 +14,36 @@ web_stats = {
 }
 
 df = pd.DataFrame(web_stats)
+# print(df.head())
 
 # print(df)
 # print(df.tail())
 # print(df.tail(2))
-# print(df.set_index('Day',inplace=True))
+# df.set_index('Day',inplace=True)
 # print(df.head())
 # print(df['Visitors'])
 # print(df.Visitors)
-# print(df[['Bounce_Rate','Visitors']])
-# print(df.Visitors.tolist())
-# print(np.array(df[['Bounce_Rate','Visitors']]))
+# print(df[['Bounce_Rate','Visitors']]) # select multiple column 
+# # print(df.Visitors.tolist()) # to convert to list 
+# print(np.array(df[['Bounce_Rate','Visitors']]))  # conver the list to array
 
 # df2 = pd.DataFrame(np.array(df[['Bounce_Rate','Visitors']]))
 # print(df2)
 
 
-
+## Class 3
 
 # #Pandas IO's 
-# df = pd.read_csv('ZILLOW-M1060_PHIVAH.csv')
-# print(df.head())
-# df.set_index('Date',inplace=True)
-# df.to_csv('newcsv2.csv')
-# df = pd.read_csv('newcsv2.csv')
-# print(df.head())
+df = pd.read_csv('ZILLOW-M1060_PHIVAH.csv')
+print(df.head())
+df.set_index('Date',inplace=True)
+df.to_csv('newcsv2.csv')
+df.to_csv('newcsv2.csv', header=False)
+df = pd.read_csv('newcsv2.csv')
+print(df.head())
 
-
-# df = pd.read_csv('newcsv2.csv',index_col=0)
-# print(df.head())
+df = pd.read_csv('newcsv2.csv', names=["Data_date","avg_value"],index_col=0)
+print(df.head())
 
 # df.columns = ['Austin_HPI']
 # print(df.head())
@@ -53,26 +54,26 @@ df = pd.DataFrame(web_stats)
 # df = pd.read_csv('newcsv4.csv',names=['Date','Austin_HPI'],index_col=False)
 # print(df.head())
 # df.to_html('example.html')
-# df.rename(columns={'Austin_HPI':'770006_HPI'},inplace=True)
+# df.rename(columns={'Austin_HPI':'770006_HPI'},inplace=True) # Rename the colument from csv file 
 # print(df.head())
 
-# api_key = open('quandlapikey.txt','r').read()
+## CLass 4 
 
+api_key = open('quandlapikey.txt','r').read()
 
+fiddy_states = pd.read_html('https://simple.wikipedia.org/wiki/List_of_U.S._states')
+print(fiddy_states)
 
-# fiddy_states = pd.read_html('https://simple.wikipedia.org/wiki/List_of_U.S._states')
-#print(fiddy_states)
+#Dataframe 
+print(fiddy_states[0])
 
-##Dataframe 
-#print(fiddy_states[0])
+#Read column zero 
+print(fiddy_states[0][1][1:])
 
-##Read column zero 
-# print(fiddy_states[0][1][1:])
-
-# for abbv in fiddy_states[0][1][1:]:
-#     df = quandl.get('FMAC/HPI_'+str(abbv), authtoken=api_key)
-#     df.columns=[str(abbv)]
-#     print(df.head())
+for abbv in fiddy_states[0][1][1:]:
+    df = quandl.get('FMAC/HPI_'+str(abbv), authtoken=api_key)
+    df.columns=[str(abbv)]
+    #print(df.head())
 
 # main_df = pd.DataFrame()
 # for abbv in fiddy_states[0][1][1:]:
@@ -84,7 +85,7 @@ df = pd.DataFrame(web_stats)
 #         main_df = main_df.join(df)
 # print(main_df.head())
 
-    
+## class 5    
 
 # Pandas concatination and appending 
 
@@ -113,6 +114,9 @@ df = pd.DataFrame(web_stats)
 # s = pd.Series([80,2,50],index=['HPI','Int_rate','US_GDP_Thousand'])
 # df4 = df1.append(s,ignore_index=True)
 # print(df4)
+
+
+##class 6 
 
 #Merging and joining 
 
@@ -272,19 +276,19 @@ HPI_data = pd.read_pickle('fiddy_states.pickle')
 # plt.show()
 
 
-fig = plt.figure()
-ax1 = plt.subplot2grid((1,1),(0,0))
-ax2 = plt.subplot2grid((2,1),(1,0),sharex=ax1)
+# fig = plt.figure()
+# ax1 = plt.subplot2grid((1,1),(0,0))
+# ax2 = plt.subplot2grid((2,1),(1,0),sharex=ax1)
 
-TX_AK_12corr = pd.rolling_corr(HPI_data['TX'],HPI_data['AK'],12)
-HPI_data['TX'].plot(ax=ax1,label='TX HPI')
-HPI_data['AK'].plot(ax=ax1,label='AK HPI')
+# TX_AK_12corr = pd.rolling_corr(HPI_data['TX'],HPI_data['AK'],12)
+# HPI_data['TX'].plot(ax=ax1,label='TX HPI')
+# HPI_data['AK'].plot(ax=ax1,label='AK HPI')
 
-ax1.legend(loc=4)
-TX_AK_12corr.plot(ax=ax2, label='TX_AK_12corr')
+# ax1.legend(loc=4)
+# TX_AK_12corr.plot(ax=ax2, label='TX_AK_12corr')
 
-plt.legend(loc=4)
-plt.show()
+# plt.legend(loc=4)
+# plt.show()
 
 
 

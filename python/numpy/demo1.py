@@ -1,15 +1,15 @@
 import numpy as np
 # arr1 = np.array([[1,2,3,4],[1,2,3,4]])
-# a = np.arange(1,10,2)
+# # a = np.arange(1,10,2)
 # dt = np.dtype([('age',np.int8)]) 
-# a = np.array([(10,),(20,),(30,)], dtype = dt) 
-# print(a['age'])
+# a = np.array([10,20,30], dtype = dt) 
+# print(a['age'][0])
 
 # student = np.dtype([('name','S3'), ('age', 'i1'), ('marks', 'f4')]) 
 # a = np.array([('abc', 21, 50),('xyz', 18, 75)], dtype = student) 
 
 # print(a['name'])
-
+# print(a['age'])
 # print(arr1.shape)
 # print(arr1.reshape(4,2))
 # print(arr1.itemsize)
@@ -40,10 +40,10 @@ import numpy as np
 # print(np.random.random(3))
 
 
-x = np.linspace(10,20,5) 
+x = np.linspace(10,20,5) # evenly distributed data 
 print(x)
-# print(x) 
-# print(np.logspace(1.0,2.0, num=10))
+print(x) 
+print(np.logspace(1.0,2.0, num=10))
 
 # print(np.arange(10)[2:])
 # print(np.arange(10)[4:8])
@@ -83,37 +83,37 @@ print(x)
 # if c3:
 #     print("C3 has value")
 
-class StaffIterator:
+# class StaffIterator:
     
-    def __init__(self,iterable):
-        self.iterable = iterable
-        self.i=0
+#     def __init__(self,iterable):
+#         self.iterable = iterable
+#         self.i=0
     
-    def next(self):
-        if len(self.iterable.members) <= self.i: raise StopIteration
-        v = self.iterable.members[self.i]
-        self.i +=1
-        return v
+#     def next(self):
+#         if len(self.iterable.members) <= self.i: raise StopIteration
+#         v = self.iterable.members[self.i]
+#         self.i +=1
+#         return v
 
-class Staff:
-    def __init__(self,company="ABC Inc"):
-        self.company= company
-        self.members = []
-    def employ(self, member):
-        self.members.append(member)
-        print(member,"Employed")
-    def list_(self):
-        print("Employee List is ")
-        for member in self.members: print(member, end=' ')
-    def __iter__(self):
-        return StaffIterator(self)
+# class Staff:
+#     def __init__(self,company="ABC Inc"):
+#         self.company= company
+#         self.members = []
+#     def employ(self, member):
+#         self.members.append(member)
+#         print(member,"Employed")
+#     def list_(self):
+#         print("Employee List is ")
+#         for member in self.members: print(member, end=' ')
+#     def __iter__(self):
+#         return StaffIterator(self)
 
-s = Staff("EMC Corporation")
-s.employ("thimma")
-s.employ("lakshmi")
-s.employ("Kumar")
-for i in s: 
-    print(i)
+# s = Staff("EMC Corporation")
+# s.employ("thimma")
+# s.employ("lakshmi")
+# s.employ("Kumar")
+# for i in s: 
+#     print(i)
 
 
 # class myiter:

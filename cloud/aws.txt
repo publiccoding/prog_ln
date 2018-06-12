@@ -1,0 +1,4 @@
+
+From the AWS CLI: 
+
+aws ec2 describe-instances --output table --region ap-south-1
