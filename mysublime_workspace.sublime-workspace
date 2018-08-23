@@ -1,0 +1,467 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"se",
+				"setName"
+			],
+			[
+				"cure",
+				"currentThread"
+			],
+			[
+				"cub",
+				"cube_cal"
+			],
+			[
+				"thra",
+				"threading"
+			],
+			[
+				"pic",
+				"pickle_test"
+			],
+			[
+				"red",
+				"readlines"
+			],
+			[
+				"data",
+				"data_value"
+			],
+			[
+				"myd",
+				"my_data"
+			],
+			[
+				"my",
+				"my_data1"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "python/Advanced/ClassObject.py",
+			"settings":
+			{
+				"buffer_size": 197,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "test/practice/Basic/Inheritance.py",
+			"settings":
+			{
+				"buffer_size": 2424,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "python/numpy/practice",
+			"settings":
+			{
+				"buffer_size": 3068,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "python/pandas/panda_practice1.py",
+			"settings":
+			{
+				"buffer_size": 7389,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/kristhim/Desktop/thimma/git/my_practice/python_constructor.py",
+			"settings":
+			{
+				"buffer_size": 118,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pytho",
+				"Set Syntax: Python"
+			],
+			[
+				"",
+				"Build With: Python"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 129.0,
+		"history":
+		[
+			"print('thimma')",
+			"python",
+			"clear"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/kristhim/Desktop/thimma/git/os_deploy/Python",
+		"/C/Users/kristhim/Desktop/thimma/git/prog_ln",
+		"/C/Users/kristhim/Desktop/thimma/git/prog_ln/python",
+		"/C/Users/kristhim/Desktop/thimma/git/prog_ln/python/pandas",
+		"/C/Users/kristhim/Desktop/thimma/git/prog_ln/python/pandas/.ipynb_checkpoints"
+	],
+	"file_history":
+	[
+		"/C/Users/kristhim/Desktop/thimma/git/personel/iq",
+		"/C/Users/kristhim/Desktop/thimma/git/prog_ln/practice/example.py",
+		"/C/Users/kristhim/Desktop/thimma/git/prog_ln/practice/pytest2.7.py",
+		"/C/Users/kristhim/Desktop/thimma/git/prog_ln/test/practice/Advanced/threading/multiprocessing_basic.py",
+		"/C/Users/kristhim/Desktop/thimma/git/prog_ln/test/practice/Advanced/threading/thread_daemon.py",
+		"/C/Users/kristhim/Desktop/thimma/git/prog_ln/test/practice/Advanced/threading/thread_object.py",
+		"/C/Users/kristhim/Desktop/thimma/git/prog_ln/test/practice/Advanced/threading/threading_example.py",
+		"/C/Users/kristhim/Desktop/thimma/git/prog_ln/test/practice/Basic/json_example.py",
+		"/C/Users/kristhim/Desktop/thimma/git/prog_ln/test/practice/Basic/data.json",
+		"/C/Users/kristhim/Desktop/thimma/git/prog_ln/test/practice/Basic/File_operation.py",
+		"/C/Users/kristhim/Desktop/thimma/git/prog_ln/test/practice/Basic/pickle_test",
+		"/C/Users/kristhim/Desktop/thimma/git/prog_ln/test/practice/Basic/pickle_example.py",
+		"/C/Users/kristhim/Desktop/thimma/git/prog_ln/practice/data.json",
+		"/C/Users/kristhim/Desktop/thimma/git/prog_ln/python/corey_shef/Closure/html_closure.py",
+		"/C/Users/kristhim/Desktop/thimma/git/prog_ln/python/corey_shef/Python-Random/random_demo.py",
+		"/C/Users/kristhim/Desktop/thimma/git/prog_ln/python/corey_shef/Python-Random/random_data.py",
+		"/C/Users/kristhim/Desktop/thimma/git/prog_ln/python/corey_shef/Scope/scope.py",
+		"/C/Users/kristhim/Desktop/thimma/git/prog_ln/python/corey_shef/Slicing/slicing.py",
+		"/C/Users/kristhim/Desktop/thimma/git/prog_ln/python/corey_shef/Str_Repr/test.py",
+		"/C/Users/kristhim/Desktop/thimma/git/os_deploy/Python/Project_multiple/patch/osPatchUpdate.py",
+		"/C/Users/kristhim/Desktop/thimma/git/os_deploy/Python/File_Rename_remove.py",
+		"/C/Users/kristhim/Desktop/thimma/git/prog_ln/.gitignore",
+		"/C/Users/kristhim/Desktop/thimma/git/prog_ln/python/corey_shef/Str_Repr/test2.py",
+		"/C/Users/kristhim/Desktop/thimma/git/os_deploy/File_Rename.py",
+		"/C/Users/kristhim/Desktop/thimma/git/os_deploy/Python/os_reinstall/cs500_SLES_Upgrade_post/addOnFileArchive/haswellSLESAddOnFiles.tar.gz",
+		"/C/Users/kristhim/Desktop/thimma/softwares/Sublime Text Build 3176/Data/Packages/User/Preferences.sublime-settings",
+		"/C/Users/kristhim/Desktop/thimma/unix/rhel training content",
+		"/C/Users/kristhim/Desktop/thimma/git/junk/hive_examples_class"
+	],
+	"find":
+	{
+		"height": 27.2
+	},
+	"find_in_files":
+	{
+		"height": 107.2,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "C:\\Users\\kristhim\\Desktop\\thimma\\git\\os_deploy\\Python"
+		},
+		{
+			"path": "C:\\Users\\kristhim\\Desktop\\thimma\\git\\prog_ln"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "python/Advanced/ClassObject.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 197,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								197,
+								197
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "test/practice/Basic/Inheritance.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2424,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								484,
+								484
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 162.4,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "python/numpy/practice",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3068,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1269,
+								1269
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 612.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "python/pandas/panda_practice1.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7389,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								297,
+								297
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/kristhim/Desktop/thimma/git/my_practice/python_constructor.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 118,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								97,
+								97
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.2
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 181.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 51.2
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 272.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}

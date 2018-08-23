@@ -30,7 +30,6 @@ df = pd.DataFrame(web_stats)
 # df2 = pd.DataFrame(np.array(df[['Bounce_Rate','Visitors']]))
 # print(df2)
 
-
 ## Class 3
 
 # #Pandas IO's 
@@ -289,13 +288,3 @@ HPI_data = pd.read_pickle('fiddy_states.pickle')
 
 # plt.legend(loc=4)
 # plt.show()
-
-
-
-
-
-
-
-
-    
-    

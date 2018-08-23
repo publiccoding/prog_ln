@@ -69,11 +69,6 @@
 #
 #
 #
-
-
-
-
-
 #
 # def myfunction(start=1,stop ,step=1):
 #     while start < stop:

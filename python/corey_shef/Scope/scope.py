@@ -14,10 +14,10 @@ def outer():
 
     def inner():
         # x = 'inner x'
-        for c in range(4):
-            x = 'inner {}'.format(c)
+        for d in range(4):
+            x = 'inner {}'.format(d)
         print(x)
-        print(a, b, c)
+        print(a, b, d)
 
     inner()
     print(x)

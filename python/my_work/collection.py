@@ -1,17 +1,10 @@
-
-
-
 # In this session we are going to work on Collection in python 
-
-
 # 1. Named Tuples
-
 
 import collections
 
 # Student = collections.namedtuple('Student',['Name','age','rollno'])
 # student = Student('Varun',27,100)
-
 # print(student.Name)
 # print(student._fields)
 # student=student._replace(Name="thimmarayan")

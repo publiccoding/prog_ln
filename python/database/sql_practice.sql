@@ -9,9 +9,12 @@ insert into dept_table values(10,'operation','boston');
 commit;
 
 desc atm_loc
+
 select count(amt) as amt_count, atm_loc from atm_loc where atm_loc = 'bangalore' and amt = 50000 group by atm_loc having count(amt)>2;
 select * from customers;
+
 desc uacc
+
 select u.id,u.name,u.loc,a.amt,a.atm_loc,a.id from uacc u left join  atm_loc a on a.id=u.id;
 create table emp_data(id int, name varchar2(20),addr varchar2(20));
 insert into emp_data values(100,'thimma','varaganappalil');
@@ -29,27 +32,24 @@ SELECT distinct(id), name , addr , dep_id, dep_name, mgr_id from emp_data right 
 select * from emp_data
 
 -- *************************************************
-
 --alter table emp_data
 alter table emp_data add salary int;
 
 -- *************************************************
-
 -- Update table data 
 update  emp_data set salary=2000 where id=100;
 update  emp_data set salary=4000 where id=200;
 update  emp_data set salary=5000 where id=300;
 update  emp_data set salary=6000 where id=400;
 
+
 select * from emp_data where name like 'th%';
 select name , salary , salary +500 from emp_data;
 
 -- *************************************************
-
 -- second highest salary 
-select max(salary) from emp_data where not salary=(select max(salary) from emp_data )
+select max(salary) from emp_data where not salary=(select max(salary) from emp_data)
 -- *************************************************
-
 
 --SQL TOP, LIMIT and ROWNUM Example
 select * from emp_data where rownum <=3;
@@ -63,7 +63,6 @@ select distinct id,salary from emp_data;
 -- *************************************************
 
 --VIEW Operation table 
-
 create view vemp_data as select * from emp_data;
 create view test_view as (select e.id, e.name,d.dep_name from emp_data e ,dept d ) 
 select * from vemp_data;
@@ -71,11 +70,9 @@ select * from test_view;
 insert into test_view values(600,'noname','testing')  -- will not work because of multiple base table . 
 delete from vemp_data where id=400
 drop view vemp_data;
-
 select * from dept;
 select * from emp_data;
 select e.id, e.name,d.dep_name from emp_data e ,dept d;
-
 select * from test_view ;
 select id,name,addr, sum(salary) from emp_data group by addr;
 select count(id), amt from atm_loc group by amt having count(atm_loc) > 2;
@@ -84,7 +81,6 @@ select count(id), amt,atm_loc, count(atm_loc) from atm_loc group by amt,atm_loc 
 -- *************************************************
 
 --creating public database link 
-
 create  public database link test2db using 'localhost:1521/test2db';
 drop public database link dblink;
 CREATE PUBLIC DATABASE LINK dblink CONNECT TO thimma identified by thimma using  test2db;
@@ -94,7 +90,6 @@ create  database link test2db connect to thimma identified by 'thimma' using 'lo
 create user thimma identified by thimma;
 
 -- Grant user priviledges 
-
 grant create session to thimma;
 grant sysdba to thimma;
 grant create database link to thimma;
@@ -139,17 +134,13 @@ drop materialized view mv_dept
 execute dbms_mview.refresh('mv_dept');
 
 --create materialized view logs
-
 create materialized view log on dept
-
 alter session set query_rewrite_enabled=true;
 alter session set query_rewrite_integrity=trusted;
 
 ---*******************************************************************************
 -- ORACLE Tablespaces 
 create tablespace thimma datafile 'thimma.dat' size 100M reuse autoextend on next 10M maxsize 200M;
-
-
 select owner,table_name from all_tables;
 select * from user_tables where table_name='emp_data';
 select owner,table_name from all_tables where table_name like 'emp_%';
@@ -234,7 +225,6 @@ LOOP
 END LOOP;
 
 --Implicit cursor example 
-
 SET SERVEROUTPUT ON
  
 BEGIN

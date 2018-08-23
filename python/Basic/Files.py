@@ -1,6 +1,4 @@
 
-
-
 def person_lister(f):
     def inner(people):
         return map(f,people)

@@ -11,7 +11,7 @@ def f(n):
 if __name__== "__main__":
 
     t1 = time.time()
-    p = Pool()
+    p = Pool(2)
     result = p.map(f,range(100))
     p.close()
     p.join()

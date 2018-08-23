@@ -6,7 +6,7 @@
 # In [34]: tmp = object.__new__(A)
 
 # In [35]: A.__init__(tmp,5)
-a = tmp 
+# a = tmp 
 
 
 

@@ -7,27 +7,7 @@
        [0., 0., 0., 0., 0., 0., 0., 1., 0., 0.],
        [0., 0., 0., 0., 0., 0., 0., 0., 1., 0.],
        [0., 0., 0., 0., 0., 0., 0., 0., 0., 1.]])
->>>  Readline internal error
-Traceback (most recent call last):
-  File "C:\python\lib\site-packages\pyreadline\console\console.py", line 768, in hook_wrapper_23
-    res = ensure_str(readline_hook(prompt))
-  File "C:\python\lib\site-packages\pyreadline\rlmain.py", line 571, in readline
-    self._readline_from_keyboard()
-  File "C:\python\lib\site-packages\pyreadline\rlmain.py", line 536, in _readline_from_keyboard
-    if self._readline_from_keyboard_poll():
-  File "C:\python\lib\site-packages\pyreadline\rlmain.py", line 556, in _readline_from_keyboard_poll
-    result = self.mode.process_keyevent(event.keyinfo)
-  File "C:\python\lib\site-packages\pyreadline\modes\emacs.py", line 243, in process_keyevent
-    r = self.process_keyevent_queue[-1](keyinfo)
-  File "C:\python\lib\site-packages\pyreadline\modes\emacs.py", line 286, in _process_keyevent
-    r = dispatch_func(keyinfo)
-  File "C:\python\lib\site-packages\pyreadline\modes\basemode.py", line 257, in complete
-    completions = self._get_completions()
-  File "C:\python\lib\site-packages\pyreadline\modes\basemode.py", line 200, in _get_completions
-    r = self.completer(ensure_unicode(text), i)
-  File "C:\python\lib\rlcompleter.py", line 80, in complete
-    readline.redisplay()
-AttributeError: module 'readline' has no attribute 'redisplay'
+
 >>> a = reshape(arange(10,35)(5,5))
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
