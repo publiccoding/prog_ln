@@ -1,0 +1,14 @@
+12 2018-09-21 23:15:10,920 DEBUG __main__ Adding two values 2 + 4 = 6
+12 2018-09-21 23:16:44,877 DEBUG __main__ Adding two values 2 + 4 = 6
+12 2018-09-21 23:17:27,870 DEBUG __main__ Adding two values 2 + 4 = 6
+15 2018-09-21 23:17:27,875 DEBUG __main__ Adding two values 2 - 4 = -2
+18 2018-09-21 23:17:27,877 DEBUG __main__ Adding two values 2 * 4 = 8
+21 2018-09-21 23:17:27,878 DEBUG __main__ Adding two values 2 / 4 = 0.5
+14 2018-09-21 23:29:57,349 DEBUG __main__ Adding two values 2 + 4 = 6
+17 2018-09-21 23:29:57,350 DEBUG __main__ Adding two values 2 - 4 = -2
+20 2018-09-21 23:29:57,351 DEBUG __main__ Adding two values 2 * 4 = 8
+23 2018-09-21 23:29:57,352 DEBUG __main__ Adding two values 2 / 4 = 0.5
+14 2018-09-21 23:30:26,287 DEBUG mathstable Adding two values 2 + 4 = 6
+17 2018-09-21 23:30:26,288 DEBUG mathstable Adding two values 2 - 4 = -2
+20 2018-09-21 23:30:26,289 DEBUG mathstable Adding two values 2 * 4 = 8
+23 2018-09-21 23:30:26,289 DEBUG mathstable Adding two values 2 / 4 = 0.5
